@@ -8,6 +8,11 @@
 #include <windows.h>
 #include <conio.h>
 #include <algorithm>
+
+#include "Taxi.h"
+#include "TaiXe.h"
+#include "ChuyenXe"
+
 using namespace std;
 
 
@@ -86,3 +91,4 @@ public:
 
     void menu();
 };
+
