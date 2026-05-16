@@ -1,0 +1,155 @@
+@model PaginatedList<MotorcycleShopMVC.Models.Motorcycle>
+
+@{
+    ViewData["Title"] = "Motorcycle Library";
+}
+
+<div class="motorcycles-page">
+    @* Hero Section *@
+    <section class="page-hero rounded-4 p-4 p-md-5 mb-4 text-white" style="background: linear-gradient(135deg, #1a1a1a 0%, #343a40 100%);">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+            <div>
+                <h1 class="fw-bold mb-2">Motorcycle Library</h1>
+                <p class="mb-0 text-light">Discover available models and choose your perfect ride.</p>
+            </div>
+            <div class="hero-badge">
+                @* Hiển thị tổng số item từ PaginatedList *@
+                <span class="badge bg-light text-dark fs-6 px-3 py-2">Total: @Model.Count() bikes</span>
+            </div>
+        </div>
+    </section>
+
+    @* Form Lọc và Tìm kiếm Server-side *@
+    <section class="mb-4">
+        <form asp-action="Index" method="get" class="bg-light p-3 rounded-3 shadow-sm">
+            <div class="row g-2 mb-3">
+                <div class="col-md-4">
+                    <input type="text" name="searchString" value="@ViewData["CurrentFilter"]" class="form-control" placeholder="Tìm theo tên xe..." />
+                </div>
+                <div class="col-md-2">
+                    <select name="brandId" asp-items="@(ViewData["BrandId"] as SelectList)" class="form-select">
+                        <option value="">Tất cả hãng</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <select name="typeId" asp-items="@(ViewData["TypeId"] as SelectList)" class="form-select">
+                        <option value="">Tất cả loại xe</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <select name="yearFrom" asp-items="@(ViewData["YearFrom"] as SelectList)" class="form-select">
+                        <option value="">Tất cả các năm</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary w-100">Tìm kiếm</button>
+                </div>
+            </div>
+            <div class="row g-2">
+                <div class="col-md-3">
+                    <select name="priceRange" asp-items="@(ViewData["PriceRanges"] as SelectList)" class="form-select">
+                        <option value="">Tất cả các mức giá</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select name="engineRange" asp-items="@(ViewData["EngineRanges"] as SelectList)" class="form-select">
+                        <option value="">Tất cả dung tích</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <a asp-action="Index" class="btn btn-outline-secondary w-100">Reset</a>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    @* Grid hiển thị xe dạng Card *@
+    <section>
+        <div id="bikeGrid" class="row g-4">
+            @foreach (var item in Model)
+            {
+                <div class="col-12 col-sm-6 col-lg-4 bike-item">
+                    <div class="card h-100 border-0 shadow-sm bike-card">
+                        <img src="@Url.Content("~/" + item.ImagePath)" class="card-img-top bike-img" alt="@item.ModelName" style="height: 200px; object-fit: cover;" />
+
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="card-title fw-bold mb-0">@item.ModelName</h5>
+                                <span class="badge bg-primary">@item.YearFrom</span>
+                            </div>
+
+                            <p class="text-muted mb-2">Brand: <strong>@(item.Brand?.BrandName ?? "N/A")</strong></p>
+
+                            <div class="small text-secondary mb-3">
+                                <div>Engine: @item.EngineCapacity cc</div>
+                                <div>Color: @item.Color</div>
+                                <div>Stock: @item.StockQty</div>
+                            </div>
+
+                            <h5 class="text-danger fw-bold mb-3">@item.Price.ToString("N0") VND</h5>
+
+                            <div class="mt-auto d-grid gap-2">
+                                <a asp-action="Details" asp-route-id="@item.MotorcycleId" class="btn btn-primary">
+                                    Xem chi tiết
+                                </a>
+
+                                @{
+                                    var role = Context.Session.GetString("UserRole");
+                                }
+
+                                @if (role == "Vendor")
+                                {
+                                    <div class="d-flex gap-2">
+                                        <a asp-action="Edit" asp-route-id="@item.MotorcycleId" class="btn btn-outline-secondary btn-sm flex-grow-1">Sửa</a>
+                                        <a asp-action="Delete" asp-route-id="@item.MotorcycleId" class="btn btn-outline-danger btn-sm flex-grow-1">Xóa</a>
+                                    </div>
+                                }
+
+                                <form asp-controller="Cart" asp-action="AddMotorcycle" method="post">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="motorcycleId" value="@item.MotorcycleId" />
+                                    <input type="hidden" name="quantity" value="1" />
+                                    <button type="submit" class="btn btn-success w-100">Thêm vào giỏ hàng</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+
+    @* Phân trang *@
+    @{
+        var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+        var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+        var routeData = new Dictionary<string, string>
+        {
+        { "searchString", ViewData["CurrentFilter"]?.ToString() },
+        { "brandId", ViewData["CurrentBrandId"]?.ToString() },
+        { "typeId", ViewData["CurrentTypeId"]?.ToString() },
+        { "yearFrom", ViewData["CurrentYearFrom"]?.ToString() },
+        { "priceRange", ViewData["CurrentPriceRange"]?.ToString() },
+        { "engineRange", ViewData["CurrentEngineRange"]?.ToString() }
+        };
+    }
+
+    <div class="d-flex justify-content-center mt-5">
+        <nav>
+            <ul class="pagination">
+                <li class="page-item @prevDisabled">
+                    <a class="page-link" asp-action="Index" asp-all-route-data="@routeData" asp-route-pageNumber="@(Model.PageIndex - 1)">Trang trước</a>
+                </li>
+                @for (int i = 1; i <= Model.TotalPages; i++)
+                {
+                    <li class="page-item @(i == Model.PageIndex ? "active" : "")">
+                        <a class="page-link" asp-action="Index" asp-all-route-data="@routeData" asp-route-pageNumber="@i">@i</a>
+                    </li>
+                }
+                <li class="page-item @nextDisabled">
+                    <a class="page-link" asp-action="Index" asp-all-route-data="@routeData" asp-route-pageNumber="@(Model.PageIndex + 1)">Trang sau</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

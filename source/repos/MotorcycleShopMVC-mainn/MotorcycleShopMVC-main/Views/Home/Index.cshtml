@@ -1,0 +1,109 @@
+﻿﻿
+@model IEnumerable<MotorcycleShopMVC.Models.Motorcycle>
+@{
+    ViewData["Title"] = "Home";
+    var brands = ViewBag.Brands as List<MotorcycleShopMVC.Models.Brand>;
+    int? selectedBrand = ViewBag.SelectedBrand as int?;
+}
+
+<section class="hero-section rounded-4 p-5 mb-4 text-white">
+    <div class="row align-items-center">
+        <div class="col-lg-7">
+            <h1 class="display-5 fw-bold mb-3">Motorcycle Shop</h1>
+            <p class="lead mb-4">
+                Mua xe dễ dàng - Giá tốt - Nhiều lựa chọn.
+                Khám phá các mẫu xe đang bán và chọn chiếc xe phù hợp nhất cho bạn.
+            </p>
+            <div class="d-flex gap-2 flex-wrap">
+                <a asp-controller="Motorcycle" asp-action="Index" class="btn btn-primary btn-lg">Khám phá ngay</a>
+                <a asp-controller="Home" asp-action="Privacy" class="btn btn-outline-light btn-lg">Hỗ trợ người dùng</a>
+            </div>
+        </div>
+        <div class="col-lg-5 mt-4 mt-lg-0">
+            <div class="hero-card p-3 rounded-3">
+                <div class="row text-center">
+                    <div class="col-4">
+                        <h4 class="fw-bold mb-0">@Model.Count()</h4>
+                        <small>Mẫu xe</small>
+                    </div>
+                    <div class="col-4">
+                        <h4 class="fw-bold mb-0">24/7</h4>
+                        <small>Hỗ trợ</small>
+                    </div>
+                    <div class="col-4">
+                        <h4 class="fw-bold mb-0">100%</h4>
+                        <small>Uy tín</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mb-3">
+    <h2 class="fw-bold mb-3">Hãng xe</h2>
+    <div class="d-flex gap-2 flex-wrap">
+        <a asp-controller="Home" asp-action="Index"
+           class="btn @(selectedBrand == null ? "btn-primary" : "btn-outline-primary")">All</a>
+
+        @if (brands != null)
+        {
+            foreach (var b in brands)
+            {
+                <a asp-controller="Home" asp-action="Index" asp-route-brandId="@b.BrandId"
+                   class="btn @(selectedBrand == b.BrandId ? "btn-primary" : "btn-outline-primary")">
+                    @b.BrandName
+                </a>
+            }
+        }
+    </div>
+</section>
+
+<section class="mb-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="fw-bold m-0">Thư viện xe đang bán</h2>
+        <a asp-controller="Motorcycle" asp-action="Index" class="btn btn-sm btn-dark">Xem tất cả</a>
+    </div>
+
+    <div class="row g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="card h-100 shadow-sm border-0 product-card">
+                    <img src="@item.ImagePath" class="card-img-top product-img" alt="@item.ModelName" />
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">@item.ModelName</h5>
+                        <p class="text-muted mb-2">@(item.Brand?.BrandName ?? "N/A")</p>
+                        <p class="price mb-3">@item.Price.ToString("N0") VNĐ</p>
+                        <a asp-controller="Motorcycle" asp-action="Details" asp-route-id="@item.MotorcycleId"
+                           class="btn btn-primary w-100">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+
+<section class="support-section rounded-4 p-4 mt-4">
+    <h3 class="fw-bold mb-3">Hỗ trợ người dùng</h3>
+    <div class="row g-3">
+        <div class="col-md-4">
+            <div class="support-item p-3 rounded-3 h-100">
+                <h5>📞 Tư vấn mua xe</h5>
+                <p class="mb-0">Hỗ trợ chọn xe theo ngân sách và nhu cầu sử dụng.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="support-item p-3 rounded-3 h-100">
+                <h5>🛠 Dịch vụ bảo dưỡng</h5>
+                <p class="mb-0">Nhắc lịch bảo dưỡng, tư vấn phụ tùng và chăm sóc xe.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="support-item p-3 rounded-3 h-100">
+                <h5>💬 Hỗ trợ nhanh 24/7</h5>
+                <p class="mb-0">Liên hệ đội ngũ support để được xử lý nhanh nhất.</p>
+            </div>
+        </div>
+    </div>
+</section>

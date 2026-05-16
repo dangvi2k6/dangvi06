@@ -1,0 +1,420 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - MotorcycleShopMVC</title>
+
+    <link rel="stylesheet"
+          href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet"
+          href="~/css/site.css"
+          asp-append-version="true" />
+
+    <link rel="stylesheet"
+          href="~/MotorcycleShopMVC.styles.css"
+          asp-append-version="true" />
+</head>
+
+<body>
+
+    @using System.Security.Claims
+
+    @{
+            // =========================
+            // CLAIMS (PRIMARY SOURCE)
+            // =========================
+
+            var claimUserEmail =
+                User.FindFirstValue(ClaimTypes.Email);
+
+            var claimUserFullName =
+                User.FindFirstValue(ClaimTypes.Name);
+
+            var claimUserRole =
+                User.FindFirstValue(ClaimTypes.Role);
+
+            // =========================
+            // SESSION (FALLBACK ONLY)
+            // =========================
+
+            var sessionUserEmail =
+                Context.Session.GetString("UserEmail");
+
+            var sessionUserFullName =
+                Context.Session.GetString("UserFullName");
+
+            var sessionUserRole =
+                Context.Session.GetString("UserRole");
+
+            // =========================
+            // SYNC SESSION FROM CLAIMS
+            // =========================
+
+            if (User.Identity?.IsAuthenticated == true)
+            {
+                Context.Session.SetString(
+                    "UserEmail",
+                    claimUserEmail ?? "");
+
+                Context.Session.SetString(
+                    "UserFullName",
+                    claimUserFullName ?? "");
+
+                Context.Session.SetString(
+                    "UserRole",
+                    claimUserRole ?? "");
+            }
+
+            // =========================
+            // FINAL VALUES
+            // =========================
+
+            var userEmail =
+                !string.IsNullOrWhiteSpace(claimUserEmail)
+                    ? claimUserEmail
+                    : sessionUserEmail;
+
+            var userFullName =
+                !string.IsNullOrWhiteSpace(claimUserFullName)
+                    ? claimUserFullName
+                    : sessionUserFullName;
+
+            var userRole =
+                !string.IsNullOrWhiteSpace(claimUserRole)
+                    ? claimUserRole
+                    : sessionUserRole;
+
+            // =========================
+            // AUTH FLAGS
+            // =========================
+
+        bool isLoggedIn =User.Identity?.IsAuthenticated == true ||
+                            !string.IsNullOrWhiteSpace(userEmail);
+
+        bool isAdmin =
+            string.Equals(
+                userRole,
+                "Admin",
+                StringComparison.OrdinalIgnoreCase);
+
+        bool isVendor =
+            string.Equals(
+                userRole,
+                "Vendor",
+                StringComparison.OrdinalIgnoreCase);
+
+        bool isCustomer =
+            string.Equals(
+                userRole,
+                "Customer",
+                StringComparison.OrdinalIgnoreCase);
+
+        // =========================
+        // CURRENT AREA CHECK
+        // =========================
+
+        var currentController =
+            ViewContext.RouteData.Values["controller"]?.ToString();
+
+        bool isAdminPage =
+            string.Equals(
+                currentController,
+                "Admin",
+                StringComparison.OrdinalIgnoreCase);
+    }
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+
+            <div class="container">
+
+                <!-- LOGO -->
+
+                <a class="navbar-brand fw-bold"
+                       asp-controller="Home"
+                       asp-action="Index">
+                    🏍 MotorcycleShop
+                </a>
+
+                <!-- MOBILE BUTTON -->
+
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarMain">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <!-- NAVBAR -->
+
+                <div class="collapse navbar-collapse"
+                     id="navbarMain">
+
+                    <!-- LEFT MENU -->
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <!-- ========================= -->
+                        <!-- ADMIN -->
+                        <!-- ========================= -->
+                        @if (isAdmin)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-danger fw-bold"
+                                       asp-controller="Admin"
+                                       asp-action="Index">
+                                    Admin Dashboard
+                                </a>
+                            </li>
+                        }
+
+                        <!-- ========================= -->
+                        <!-- CUSTOMER / VENDOR -->
+                        <!-- ========================= -->
+                        @if (!isAdmin)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                       asp-controller="Motorcycle"
+                                       asp-action="Index">
+                                    Motorcycles
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                       asp-controller="Part"
+                                       asp-action="Index">
+                                    Parts
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                       asp-controller="Wishlist"
+                                       asp-action="Index">
+                                    Wishlist
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                       asp-controller="Support"
+                                       asp-action="Index">
+                                    Hỗ trợ
+                                </a>
+                            </li>
+                        }
+
+                        <!-- ========================= -->
+                        <!-- VENDOR ONLY -->
+                        <!-- ========================= -->
+                        @if (isVendor)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-warning fw-semibold"
+                                       asp-controller="Motorcycle"
+                                       asp-action="Create">
+                                    + Add Motorcycle
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-warning fw-semibold"
+                                       asp-controller="Part"
+                                       asp-action="Index">
+                                    Manage Parts
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-warning fw-semibold"
+                                       asp-controller="Order"
+                                       asp-action="Manage">
+                                    Manage Orders
+                                </a>
+                            </li>
+                        }
+
+                    </ul>
+
+                    <!-- RIGHT SIDE -->
+
+                    <div class="d-flex align-items-center">
+
+                        @if (isLoggedIn)
+                        {
+                            @if (!isAdmin)
+                            {
+                                <a class="nav-link text-white position-relative d-inline-block pe-3 me-3"
+                                       asp-controller="Cart"
+                                       asp-action="Index">
+
+                                    🛒 Giỏ hàng
+
+                                    <span id="cart-count"
+                                          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        0
+                                    </span>
+                                </a>
+                                
+                            }
+
+                            <!-- USER INFO -->
+
+                            <span class="text-white me-3">
+
+                                Xin chào,
+
+                                @(string.IsNullOrWhiteSpace(userFullName)
+                                    ? userEmail
+                                    : userFullName)
+
+                                @if (isAdmin)
+                                {
+                                    <span class="badge bg-danger ms-1">
+                                        Admin
+                                    </span>
+                                }
+                                else if (isVendor)
+                                {
+                                    <span class="badge bg-warning text-dark ms-1">
+                                        Vendor
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-primary ms-1">
+                                        Customer
+                                    </span>
+                                }
+
+                            </span>
+                            <div class="dropdown me-2">
+                                <button class="btn btn-outline-light btn-sm dropdown-toggle d-flex align-items-center gap-1"
+                                        type="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                    <span style="font-size:18px;">🙋‍♂️</span>
+                                </button>
+
+                                <ul class="dropdown-menu dropdown-menu-end shadow">
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="User" asp-action="Profile">
+                                            Tài khoản của tôi
+                                        </a>
+                                    </li>
+                                    @if(!isAdmin)
+                                    {
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Order" asp-action="History">
+                                            Đơn mua
+                                        </a>
+                                    </li>
+                                    }
+                                        
+                                    
+                                </ul>
+                            </div>
+
+                            <!-- LOGOUT -->
+
+                            <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-outline-light btn-sm">Đăng xuất</button>
+                            </form> 
+                        }
+                        else
+                        {
+                            <a class="btn btn-outline-light btn-sm" asp-controller="Account" asp-action="Login">Đăng nhập</a>
+                            <a class="btn btn-light btn-sm ms-2" asp-controller="Account" asp-action="Register">Đăng ký</a>
+                        }
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- MAIN -->
+
+    <div class="container py-3">
+
+        <main role="main"
+              class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="border-top footer text-muted mt-4">
+        <div class="container py-2">
+            &copy; 2026 - MotorcycleShopMVC -
+            <a asp-controller="Home"
+                  asp-action="Privacy">
+                Privacy & Support
+            </a>
+        </div>
+
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/js/site.js"
+            asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <!-- CART COUNT -->
+    @if (!isAdmin)
+    {
+        <script>
+                async function refreshCartCount() {
+                    try {
+
+                        const res =
+                            await fetch(
+                                '/Cart/GetCartCount',
+                                { cache: 'no-store' });
+
+                        const count = await res.json();
+
+                        const el =
+                            document.getElementById('cart-count');
+
+                        if (el)
+                        {
+                            el.textContent = count;
+                        }
+                    }
+                    catch (err)
+                    {
+                        console.error(err);
+                    }
+                }
+
+                document.addEventListener(
+                    'DOMContentLoaded',
+                    refreshCartCount);
+        </script>
+    }
+
+</body>
+</html>
+
+

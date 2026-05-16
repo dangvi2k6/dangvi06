@@ -1,0 +1,57 @@
+﻿@model IEnumerable<MotorcycleShopMVC.Models.Order>
+
+@{
+    ViewData["Title"] = "Quản lý tất cả đơn hàng";
+}
+
+<div class="container-fluid mt-4">
+    <h2 class="mb-4">Quản lý Đơn hàng (Admin)</h2>
+
+    <div class="table-responsive shadow-sm">
+        <table class="table table-bordered table-hover align-middle">
+            <thead class="table-dark text-center">
+                <tr>
+                    <th>Mã ĐH</th>
+                    <th>Ngày đặt</th>
+                    <th>Khách hàng</th>
+                    <th>Tổng tiền</th>
+                    <th>Cập nhật Trạng thái</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="text-center fw-bold">#@item.OrderId</td>
+                        <td class="text-center">@item.OrderDate?.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td>
+                            <strong>@item.User?.FullName</strong><br />
+                            <small class="text-muted">@item.ShippingAddress</small>
+                        </td>
+                        <td class="text-danger text-end fw-bold">@item.TotalAmount.ToString("N0") đ</td>
+                        
+                        <td style="min-width: 350px;">
+                            <form asp-controller="Order" asp-action="UpdateStatus" method="post" class="d-flex gap-2">
+                                <input type="hidden" name="orderId" value="@item.OrderId" />
+                                
+                                <select name="status" class="form-select form-select-sm">
+                                    <option value="pending" selected="@(item.Status == "pending")">Chờ xử lý</option>
+                                    <option value="processing" selected="@(item.Status == "processing")">Đang giao</option>
+                                    <option value="completed" selected="@(item.Status == "completed")">Hoàn thành</option>
+                                    <option value="cancelled" selected="@(item.Status == "cancelled")">Đã hủy</option>
+                                </select>
+
+                                <select name="paymentStatus" class="form-select form-select-sm">
+                                    <option value="unpaid" selected="@(item.PaymentStatus == "unpaid")">Chưa TT</option>
+                                    <option value="paid" selected="@(item.PaymentStatus == "paid")">Đã TT</option>
+                                </select>
+
+                                <button type="submit" class="btn btn-sm btn-primary">Lưu</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

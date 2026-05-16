@@ -1,0 +1,249 @@
+﻿@model IEnumerable<MotorcycleShopMVC.Models.User>
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Manage Users";
+}
+
+<div class="container-fluid">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <h2 class="fw-bold">
+            User Management
+        </h2>
+
+    </div>
+
+    <!-- ALERTS -->
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["Success"]
+        </div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["Error"]
+        </div>
+    }
+
+    <!-- TABLE -->
+
+    <div class="card shadow-sm border-0">
+
+        <div class="card-body">
+
+            <div class="table-responsive">
+
+                <table class="table table-bordered table-hover align-middle">
+
+                    <thead class="table-dark">
+
+                        <tr>
+                            <th>ID</th>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th width="420">Actions</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        @foreach (var user in Model)
+                        {
+                            <tr>
+
+                                <!-- ID -->
+                                <td>
+                                    @user.Id
+                                </td>
+
+                                <!-- FULL NAME -->
+                                <td>
+                                    @user.FullName
+                                </td>
+
+                                <!-- EMAIL -->
+                                <td>
+                                    @user.Email
+                                </td>
+
+                                <!-- ROLE -->
+                                <td>
+
+                                    @if (user.Role == "Admin")
+                                    {
+                                        <span class="badge bg-danger">
+                                            Admin
+                                        </span>
+                                    }
+                                    else if (user.Role == "Vendor")
+                                    {
+                                        <span class="badge bg-warning text-dark">
+                                            Vendor
+                                        </span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-secondary">
+                                            Customer
+                                        </span>
+                                    }
+
+                                </td>
+
+                                <!-- STATUS -->
+                                <td>
+
+                                    @if (user.IsActive)
+                                    {
+                                        <span class="badge bg-success">
+                                            Active
+                                        </span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-dark">
+                                            Locked
+                                        </span>
+                                    }
+
+                                </td>
+
+                                <!-- ACTIONS -->
+                                <td>
+
+                                    <div class="d-flex flex-wrap gap-2">
+
+                                        <!-- LOCK / UNLOCK -->
+                                        @if (user.IsActive)
+                                        {
+                                            <form asp-controller="Admin"
+                                                  asp-action="LockUser"
+                                                  method="post">
+
+                                                @Html.AntiForgeryToken()
+
+                                                <input type="hidden"
+                                                       name="id"
+                                                       value="@user.Id" />
+
+                                                <button type="submit"
+                                                        class="btn btn-warning btn-sm">
+
+                                                    Lock
+
+                                                </button>
+
+                                            </form>
+                                        }
+                                        else
+                                        {
+                                            <form asp-controller="Admin"
+                                                  asp-action="UnlockUser"
+                                                  method="post">
+
+                                                @Html.AntiForgeryToken()
+
+                                                <input type="hidden"
+                                                       name="id"
+                                                       value="@user.Id" />
+
+                                                <button type="submit"
+                                                        class="btn btn-success btn-sm">
+
+                                                    Unlock
+
+                                                </button>
+
+                                            </form>
+                                        }
+
+                                        <!-- CHANGE ROLE -->
+
+                                        <form asp-controller="Admin"
+                                              asp-action="ChangeRole"
+                                              method="post"
+                                              class="d-flex">
+
+                                            @Html.AntiForgeryToken()
+
+                                            <input type="hidden"
+                                                   name="id"
+                                                   value="@user.Id" />
+
+                                            <select name="role"
+                                                    class="form-select form-select-sm me-2">
+
+                                                <option value="Customer"
+                                                        selected="@(user.Role == "Customer")">
+                                                    Customer
+                                                </option>
+
+                                                <option value="Vendor"
+                                                        selected="@(user.Role == "Vendor")">
+                                                    Vendor
+                                                </option>
+
+                                                <option value="Admin"
+                                                        selected="@(user.Role == "Admin")">
+                                                    Admin
+                                                </option>
+
+                                            </select>
+
+                                            <button type="submit"
+                                                    class="btn btn-primary btn-sm">
+
+                                                Save
+
+                                            </button>
+
+                                        </form>
+
+                                        <!-- DELETE -->
+
+                                        <form asp-controller="Admin"
+                                              asp-action="DeleteUser"
+                                              method="post">
+
+                                            @Html.AntiForgeryToken()
+
+                                            <input type="hidden"
+                                                   name="id"
+                                                   value="@user.Id" />
+
+                                            <button type="submit"
+                                                    class="btn btn-danger btn-sm"
+                                                    onclick="return confirm('Delete this user?')">
+
+                                                Delete
+
+                                            </button>
+
+                                        </form>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                        }
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

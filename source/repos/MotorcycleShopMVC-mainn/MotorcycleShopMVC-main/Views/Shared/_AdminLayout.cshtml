@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - Admin Panel</title>
+
+    <link rel="stylesheet"
+          href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet"
+          href="~/css/site.css"
+          asp-append-version="true" />
+</head>
+
+<body>
+
+    <div class="d-flex">
+
+        <!-- SIDEBAR -->
+        <div class="bg-dark text-white p-3"
+             style="width:260px; min-height:100vh;">
+
+            <h3 class="mb-4">
+                Admin Panel
+            </h3>
+
+            <ul class="nav flex-column">
+
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-white"
+                           asp-controller="Admin"
+                           asp-action="Index">
+                        Dashboard
+                    </a>
+                </li>
+
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-white"
+                           asp-controller="Admin"
+                           asp-action="Users">
+                        Manage Users
+                    </a>
+                </li>
+
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-white"
+                           asp-controller="Admin"
+                           asp-action="Orders">
+                        Manage Orders
+                    </a>
+                </li>
+
+                <li class="nav-item mb-2">
+                    <a class="nav-link text-white"
+                           asp-controller="Admin"
+                           asp-action="Revenue">
+                        Revenue Analytics
+                    </a>
+                </li>
+
+                <li class="nav-item mt-4">
+                    <a class="btn btn-outline-light w-100"
+                           asp-controller="Home"
+                           asp-action="Index">
+                        Back To Shop
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="flex-grow-1">
+
+            <!-- TOPBAR -->
+            <nav class="navbar navbar-light bg-light border-bottom px-4">
+
+                <span class="navbar-brand mb-0 h5">
+                    @ViewData["Title"]
+                </span>
+
+                <form asp-controller="Account"
+                      asp-action="Logout"
+                      method="post">
+
+                    @Html.AntiForgeryToken()
+
+                    <button class="btn btn-danger btn-sm">
+                        Logout
+                    </button>
+                </form>
+            </nav>
+
+            <!-- PAGE -->
+            <div class="p-4">
+                @RenderBody()
+            </div>
+
+        </div>
+    </div>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

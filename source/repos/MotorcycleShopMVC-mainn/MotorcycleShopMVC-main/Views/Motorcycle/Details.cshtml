@@ -1,0 +1,369 @@
+﻿@model MotorcycleShopMVC.Models.Motorcycle
+
+@{
+    ViewData["Title"] = "Chi tiết xe";
+    var price = Model?.Price ?? 0;
+    var bikeName = Model?.ModelName ?? "Motorcycle";
+    var imagePath = !string.IsNullOrWhiteSpace(Model?.ImagePath) ? Url.Content("~/" + Model.ImagePath) : "https://via.placeholder.com/1200x700?text=Motorcycle";
+    var currentUrl = $"{Context.Request.Scheme}://{Context.Request.Host}{Context.Request.Path}";
+}
+
+<style>
+    :root {
+        --bg: #0b0b0d;
+        --card: #141418;
+        --muted: #a1a1aa;
+        --text: #f4f4f5;
+        --line: #27272a;
+        --primary: #f59e0b;
+        --primary-2: #facc15;
+        --danger: #ef4444;
+        --ok: #22c55e;
+    }
+
+    body {
+        background: radial-gradient(circle at top right, #1c1c22 0%, #0b0b0d 45%, #070709 100%);
+        color: var(--text);
+    }
+
+    .detail-wrap { max-width: 1300px; margin: 20px auto 60px; }
+
+    .glass {
+        background: rgba(20,20,24,.85);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0,0,0,.35);
+        backdrop-filter: blur(4px);
+    }
+
+    .hero-img {
+        width: 100%;
+        height: 520px;
+        object-fit: cover;
+        border-radius: 16px;
+        border: 1px solid var(--line);
+    }
+
+    .title-xl { font-size: clamp(1.6rem, 2.5vw, 2.6rem); font-weight: 800; letter-spacing: .3px; }
+
+    .price {
+        color: var(--primary-2);
+        font-weight: 800;
+        font-size: clamp(1.4rem, 2.2vw, 2.2rem);
+        text-shadow: 0 0 20px rgba(250, 204, 21, .15);
+    }
+
+    .chip {
+        display:inline-flex; align-items:center; gap:6px;
+        padding:6px 10px; border:1px solid var(--line); border-radius:999px;
+        color:#ddd; background:#101014;
+        font-size:.85rem;
+    }
+
+    .spec-grid {
+        display:grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        gap:10px;
+    }
+
+    .spec-item {
+        background:#0f0f13;
+        border:1px solid var(--line);
+        border-radius:12px;
+        padding:10px 12px;
+    }
+
+    .spec-item small { color: var(--muted); display:block; }
+    .spec-item strong { color: #fff; }
+
+    .btn-gold {
+        background: linear-gradient(90deg, #f59e0b, #facc15);
+        border: none;
+        color: #111;
+        font-weight: 700;
+    }
+    .btn-gold:hover { filter: brightness(1.05); color:#000; }
+
+    .btn-outline-light-soft {
+        border:1px solid #3f3f46;
+        color:#f4f4f5;
+        background: transparent;
+    }
+    .btn-outline-light-soft:hover { background:#1f1f24; color:#fff; }
+
+    .section-title {
+        font-weight: 800; margin-bottom: 14px; letter-spacing:.3px;
+    }
+
+    .star { color: #fbbf24; font-size: 1.05rem; }
+
+    .comment {
+        border:1px solid var(--line);
+        border-radius:12px;
+        padding:12px;
+        background:#0f0f13;
+    }
+
+    .related-card img {
+        width:100%; height:170px; object-fit:cover; border-radius:10px;
+    }
+
+    .seller-map iframe {
+        width:100%; height:220px; border:0; border-radius:12px;
+    }
+
+    .sticky-side { position: sticky; top: 85px; }
+
+    .muted { color: var(--muted); }
+
+    .divider { height:1px; background:var(--line); margin:14px 0; }
+</style>
+
+<div class="detail-wrap container-fluid">
+    <div class="row g-4">
+        <!-- LEFT -->
+        <div class="col-lg-8">
+            <div class="glass p-3 p-md-4 mb-4">
+                <img src="@imagePath" alt="@bikeName" class="hero-img mb-3" />
+                <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                    <span class="chip">🏍 @Model.ModelName</span>
+                    <span class="chip">🏷 Hãng: @(Model.Brand?.BrandName ?? "N/A")</span>
+                    <span class="chip">🗓 Năm: @Model.YearFrom - @Model.YearTo</span>
+                    <span class="chip">🎨 @Model.Color</span>
+                </div>
+
+                <h1 class="title-xl mb-1">@Model.ModelName</h1>
+                <div class="price mb-3">@price.ToString("N0") VND</div>
+
+                <div class="spec-grid mb-3">
+                    <div class="spec-item"><small>Dung tích động cơ</small><strong>@Model.EngineCapacity cc</strong></div>
+                    <div class="spec-item"><small>Tồn kho</small><strong>@Model.StockQty xe</strong></div>
+                    <div class="spec-item"><small>Bảo hành</small><strong>@(string.IsNullOrWhiteSpace(Model.WarrantyPolicy) ? "Liên hệ" : Model.WarrantyPolicy)</strong></div>
+                    <div class="spec-item"><small>Cập nhật</small><strong>@Model.UpdatedAt?.ToString("dd/MM/yyyy HH:mm")</strong></div>
+                </div>
+
+                <h5 class="section-title">Mô tả</h5>
+                <p class="muted mb-0">
+                    @(string.IsNullOrWhiteSpace(Model.Description) ? "Chưa có mô tả chi tiết." : Model.Description)
+                </p>
+            </div>
+
+            <!-- CONTACT / BOOKING FORM -->
+            <div class="glass p-3 p-md-4 mb-4">
+                <h5 class="section-title">Gửi yêu cầu tư vấn</h5>
+                <form>
+                    <div class="row g-2">
+                        <div class="col-md-6">
+                            <input class="form-control bg-dark text-light border-secondary" placeholder="Họ và tên" />
+                        </div>
+                        <div class="col-md-6">
+                            <input class="form-control bg-dark text-light border-secondary" placeholder="Số điện thoại" />
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control bg-dark text-light border-secondary" placeholder="Email" />
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-select bg-dark text-light border-secondary">
+                                <option>Chọn nhu cầu</option>
+                                <option>Liên hệ ngay</option>
+                                <option>Đặt lịch xem xe</option>
+                                <option>Lái thử</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <textarea rows="3" class="form-control bg-dark text-light border-secondary" placeholder="Nội dung yêu cầu..."></textarea>
+                        </div>
+                    </div>
+                    <div class="mt-3 d-flex flex-wrap gap-2">
+                        <button type="button" class="btn btn-gold">Liên hệ ngay</button>
+                        <button type="button" class="btn btn-outline-light-soft">Đặt lịch xem xe</button>
+                        <button type="button" class="btn btn-outline-light-soft">Lái thử</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- FINANCE TOOL -->
+            <div class="glass p-3 p-md-4 mb-4">
+                <h5 class="section-title">Công cụ hỗ trợ tài chính - Tính trả góp</h5>
+                <div class="row g-2 align-items-end">
+                    <div class="col-md-4">
+                        <label class="form-label muted">Giá xe (VND)</label>
+                        <input id="bikePrice" class="form-control bg-dark text-light border-secondary" value="@price" readonly />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label muted">% Trả trước</label>
+                        <input id="downPercent" type="number" class="form-control bg-dark text-light border-secondary" value="30" min="0" max="100" />
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label muted">Kỳ hạn vay (tháng)</label>
+                        <select id="loanMonths" class="form-select bg-dark text-light border-secondary">
+                            <option value="12">12</option>
+                            <option value="24">24</option>
+                            <option value="36" selected>36</option>
+                            <option value="48">48</option>
+                            <option value="60">60</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mt-3 d-flex flex-wrap gap-3">
+                    <div class="chip">Lãi suất: <strong class="ms-1">10.5%/năm</strong></div>
+                    <div class="chip">Kỳ hạn vay: <strong class="ms-1" id="termText">36 tháng</strong></div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <small class="muted">Tiền trả trước</small>
+                        <h5 id="downPaymentText">0 VND</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <small class="muted">Khoản vay</small>
+                        <h5 id="loanAmountText">0 VND</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <small class="muted">Tạm tính mỗi tháng</small>
+                        <h5 id="monthlyText" class="text-warning">0 VND</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REVIEWS -->
+            <div class="glass p-3 p-md-4 mb-4">
+                <h5 class="section-title">Đánh giá & nhận xét</h5>
+                <span>...</span>
+            </div>
+
+            <!-- RELATED -->
+            <div class="glass p-3 p-md-4 mb-4">
+                <h5 class="section-title">Xe liên quan</h5>
+                <span>...</span>
+                <div class="row g-3">
+                    <div class="col-md-4 related-card">
+                        <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1200&auto=format&fit=crop" alt="related-1" />
+                        <div class="mt-2 fw-semibold">Xe tương tự</div>
+                        <small class="muted">Cùng hãng / phân khúc</small>
+                    </div>
+                    <div class="col-md-4 related-card">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop" alt="related-2" />
+                        <div class="mt-2 fw-semibold">Có thể bạn cũng thích</div>
+                        <small class="muted">Phong cách thể thao</small>
+                    </div>
+                    <div class="col-md-4 related-card">
+                        <img src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?q=80&w=1200&auto=format&fit=crop" alt="related-3" />
+                        <div class="mt-2 fw-semibold">Cùng tầm giá</div>
+                        <small class="muted">Giá gần với mẫu đang xem</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="col-lg-4">
+            <div class="sticky-side d-grid gap-3">
+                <!-- CTA -->
+                <div class="glass p-3">
+                    <h6 class="fw-bold mb-3">Hành động nhanh</h6>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-gold">Liên hệ ngay</button>
+                        <button class="btn btn-outline-light-soft">Đặt lịch xem xe</button>
+                        <button class="btn btn-outline-light-soft">Lái thử</button>
+
+                        <form asp-controller="Cart" asp-action="AddMotorcycle" method="post">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="motorcycleId" value="@Model.MotorcycleId" />
+                            <input type="hidden" name="quantity" value="1" />
+                            <button type="submit" class="btn btn-success w-100">Thêm vào giỏ hàng</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- WISHLIST + SHARE -->
+                <div class="glass p-3">
+                    <h6 class="fw-bold mb-3">Cá nhân hóa</h6>
+                    <div class="d-grid gap-2">
+                        <form asp-controller="Wishlist" asp-action="Add" method="post">
+                            <input type="hidden" name="motorcycleId" value="@Model.MotorcycleId" />
+                            <button type="submit" class="btn btn-outline-danger w-100" title="Thêm vào danh sách yêu thích">
+                                ❤️ Yêu thích
+                            </button>
+                        </form>
+                        <a class="btn btn-outline-light-soft" target="_blank"
+                           href="https://www.facebook.com/sharer/sharer.php?u=@Uri.EscapeDataString(currentUrl)">
+                            Chia sẻ Facebook
+                        </a>
+                        <a class="btn btn-outline-light-soft" target="_blank"
+                           href="https://zalo.me/share?url=@Uri.EscapeDataString(currentUrl)">
+                            Chia sẻ Zalo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CHAT -->
+                <div class="glass p-3">
+                    <h6 class="fw-bold mb-3">Chat trực tiếp</h6>
+                    <div class="d-grid gap-2">
+                        <a class="btn btn-primary" target="_blank" href="https://m.me/">Messenger</a>
+                        <a class="btn btn-info text-white" target="_blank" href="https://zalo.me/">Zalo</a>
+                    </div>
+                </div>
+
+                <!-- SELLER -->
+                <div class="glass p-3 seller-map">
+                    <h6 class="fw-bold mb-2">Thông tin người bán</h6>
+                    <span>...</span>
+                </div>
+
+                <a asp-action="Index" class="btn btn-outline-light-soft">← Quay về danh sách</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        (function () {
+            const price = parseFloat(document.getElementById('bikePrice').value || "0");
+            const downPercentInput = document.getElementById('downPercent');
+            const loanMonthsInput = document.getElementById('loanMonths');
+
+            const downPaymentText = document.getElementById('downPaymentText');
+            const loanAmountText = document.getElementById('loanAmountText');
+            const monthlyText = document.getElementById('monthlyText');
+            const termText = document.getElementById('termText');
+
+            // Lãi suất tham khảo năm
+            const annualRate = 10.5 / 100;
+
+            function formatVND(n) {
+                return (n || 0).toLocaleString('vi-VN') + ' VND';
+            }
+
+            function recalc() {
+                const downPercent = Math.min(100, Math.max(0, parseFloat(downPercentInput.value || "0")));
+                const months = Math.max(1,parseInt(loanMonthsInput.value || "36"));
+
+                const downPayment = price * (downPercent / 100);
+                const loanAmount = Math.max(0, price - downPayment);
+
+                // Công thức annuity đơn giản
+                const monthlyRate = annualRate / 12;
+                let monthlyPay = 0;
+                if (loanAmount > 0) {
+                    monthlyPay = loanAmount * monthlyRate / (1 - Math.pow(1 + monthlyRate, -months));
+                }
+
+                downPaymentText.textContent = formatVND(downPayment);
+                loanAmountText.textContent = formatVND(loanAmount);
+                monthlyText.textContent = formatVND(monthlyPay);
+                termText.textContent = months + " tháng";
+            }
+
+            downPercentInput.addEventListener('input', recalc);
+            loanMonthsInput.addEventListener('change', recalc);
+
+            recalc();
+        })();
+    </script>
+}

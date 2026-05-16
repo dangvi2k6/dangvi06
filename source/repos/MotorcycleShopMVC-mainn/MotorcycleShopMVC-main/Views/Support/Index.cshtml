@@ -1,0 +1,195 @@
+﻿@{
+    ViewData["Title"] = "Trung tâm hỗ trợ";
+}
+
+<style>
+    .support-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+        .support-header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .support-header p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+    .category-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    .category-card {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.2s, box-shadow 0.2s;
+        text-decoration: none;
+        color: #333;
+    }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .category-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        .category-card h5 {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+    .faq-section {
+        margin-bottom: 50px;
+    }
+
+        .faq-section h2 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+    /* Styles for Bootstrap Accordion */
+    .accordion-button:not(.collapsed) {
+        color: #0c63e4;
+        background-color: #e7f1ff;
+    }
+
+    .accordion-button:focus {
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="support-header">
+        <h1>Trung Tâm Hỗ Trợ</h1>
+        <p>Chúng tôi có thể giúp gì cho bạn?</p>
+    </div>
+
+    <!-- Category Section -->
+    <div class="category-section">
+        <h2 class="mb-4">Danh mục</h2>
+        <div class="category-grid">
+            <a href="#" class="category-card">
+                <div class="icon">🛍️</div>
+                <h5>Mua Sắm</h5>
+            </a>
+            <a href="#" class="category-card">
+                <div class="icon">🏷️</div>
+                <h5>Khuyến Mãi &amp; Ưu Đãi</h5>
+            </a>
+            <a href="#" class="category-card">
+                <div class="icon">💳</div>
+                <h5>Thanh Toán</h5>
+            </a>
+            <a href="#" class="category-card">
+                <div class="icon">🚚</div>
+                <h5>Đơn Hàng &amp; Vận Chuyển</h5>
+            </a>
+            <a href="#" class="category-card">
+                <div class="icon">🔄</div>
+                <h5>Trả Hàng &amp; Hoàn Tiền</h5>
+            </a>
+            <a href="#" class="category-card">
+                <div class="icon">ℹ️</div>
+                <h5>Thông Tin Chung</h5>
+            </a>
+        </div>
+    </div>
+
+    <!-- FAQ Section with Bootstrap Accordion -->
+    <div class="faq-section">
+        <h2>Câu hỏi thường gặp</h2>
+        <div class="accordion" id="faqAccordion">
+
+            <!-- FAQ Item 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        [Cảnh báo lừa đảo] Mua sắm an toàn
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        <strong>Luôn cảnh giác!</strong> Không bao giờ chia sẻ mật khẩu hoặc thông tin cá nhân qua các liên kết không rõ nguồn gốc. Mọi giao dịch chỉ nên được thực hiện trực tiếp trên trang web hoặc ứng dụng chính thức của chúng tôi.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        [Dịch vụ] Cách liên hệ Chăm sóc khách hàng
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Bạn có thể liên hệ với chúng tôi qua email tại <strong>support@motorcycleshop.com</strong> hoặc gọi đến hotline <strong>1900 1234</strong> (hoạt động từ 8:00 - 21:00 hàng ngày) để được hỗ trợ nhanh nhất.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Làm thế nào để theo dõi đơn hàng của tôi?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Sau khi đặt hàng thành công, bạn có thể vào mục <strong>"Lịch sử đơn hàng"</strong> trong trang cá nhân của mình. Tại đây, bạn sẽ thấy trạng thái chi tiết của từng đơn hàng và mã vận đơn (nếu có) để theo dõi.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Chính sách bảo hành sản phẩm như thế nào?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Mỗi sản phẩm có chính sách bảo hành riêng từ nhà sản xuất hoặc nhà cung cấp. Thông tin chi tiết về thời gian và điều kiện bảo hành được ghi rõ trong trang chi tiết của từng sản phẩm.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Tôi có thể hủy đơn hàng đã đặt không?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Bạn có thể hủy đơn hàng nếu đơn hàng đó đang ở trạng thái <strong>"Chờ xử lý"</strong>. Đối với các đơn hàng đã được chuyển cho đơn vị vận chuyển, bạn không thể hủy trực tiếp mà cần liên hệ với bộ phận chăm sóc khách hàng để được hỗ trợ.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

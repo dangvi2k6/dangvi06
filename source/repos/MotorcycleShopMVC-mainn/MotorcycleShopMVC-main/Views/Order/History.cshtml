@@ -1,0 +1,81 @@
+﻿@model IEnumerable<MotorcycleShopMVC.Models.Order>
+
+@{
+    ViewData["Title"] = "Lịch sử đơn hàng";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Lịch sử đơn hàng của bạn</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            Bạn chưa có đơn hàng nào. <a asp-controller="Motorcycle" asp-action="Index">Mua sắm ngay!</a>
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-light text-center">
+                    <tr>
+                        <th>Mã đơn</th>
+                        <th>Ngày đặt</th>
+                        <th>Địa chỉ giao</th>
+                        <th>Tổng tiền</th>
+                        <th>Trạng thái ĐH</th>
+                        <th>Thanh toán</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="text-center fw-bold">#@item.OrderId</td>
+                            <td class="text-center">@item.OrderDate?.ToString("dd/MM/yyyy HH:mm")</td>
+                            <td>@item.ShippingAddress</td>
+                            <td class="text-danger text-end fw-bold">@item.TotalAmount.ToString("N0") đ</td>
+                            <td class="text-center">
+                                @if (item.Status == "pending")
+                                {
+                                    <span class="badge bg-warning text-dark">Chờ xử lý</span>
+                                }
+                                else if (item.Status == "processing")
+                                {
+
+                                    <span class="badge bg-primary">Đang giao</span>
+                                }
+                                else if (item.Status == "completed")
+                                {
+
+                                    <span class="badge bg-success">Hoàn thành</span>
+                                }
+                                else
+                                {
+
+                                    <span class="badge bg-secondary">@item.Status</span>
+                                }
+                            </td>
+                            <td class="text-center">
+                                @if (item.PaymentStatus == "unpaid")
+                                {
+                                    <span class="badge bg-danger">Chưa thanh toán</span>
+                                }
+                                else if (item.PaymentStatus == "paid")
+                                {
+
+                                    <span class="badge bg-success">Đã thanh toán</span>
+                                }
+                                else
+                                {
+
+                                    <span class="badge bg-secondary">@item.PaymentStatus</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

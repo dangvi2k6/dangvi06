@@ -1,0 +1,169 @@
+﻿@model MotorcycleShopMVC.Models.ViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Đăng ký";
+}
+
+<div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+        <div class="card shadow-sm border-0 rounded-4">
+            <div class="card-body p-4 p-md-5">
+                <h2 class="fw-bold mb-2">Create your account</h2>
+                <p class="text-muted mb-4">Join MotorcycleShop and start exploring bikes today.</p>
+
+                <form asp-action="Register" method="post" novalidate>                  
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="returnUrl" value="@ViewBag.ReturnUrl" />
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="FullName" class="form-label"></label>
+                        <input asp-for="FullName" class="form-control form-control-lg" placeholder="John Doe" />
+                        <span asp-validation-for="FullName" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label"></label>
+                        <input asp-for="Email" class="form-control form-control-lg" placeholder="you@example.com" />
+                        <span asp-validation-for="Email" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="PhoneNumber" class="form-label"></label>
+                        <input asp-for="PhoneNumber" class="form-control form-control-lg" placeholder="+84..." />
+                        <span asp-validation-for="PhoneNumber" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Address" class="form-label"></label>
+                        <input asp-for="Address" class="form-control form-control-lg" placeholder="Your address (optional)" />
+                        <span asp-validation-for="Address" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-2">
+                        <label asp-for="Password" class="form-label"></label>
+                        <div class="input-group input-group-lg">
+                            <input asp-for="Password" id="Password" type="password" class="form-control" placeholder="******" />
+                            <button class="btn btn-outline-secondary" type="button" id="togglePassword">👁</button>
+                        </div>
+                        <span asp-validation-for="Password" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-3">                  
+                        <div class="progress" style="height:8px;">
+                            <div id="passwordStrengthBar" class="progress-bar bg-secondary" role="progressbar" style="width:0%"></div>
+                        </div>                       
+                        <small class="text-muted">
+                            Sử dụng hơn 12 ký tự bao gồm chữ hoa, chữ thường, số và ký tự đặc biệt để bảo mật tốt nhất.
+                        </small>
+                    </div>
+
+                    <div class="mb-4">
+                        <label asp-for="ConfirmPassword" class="form-label"></label>
+                        <div class="input-group input-group-lg">
+                            <input asp-for="ConfirmPassword" id="ConfirmPassword" type="password" class="form-control" placeholder="******" />
+                            <button class="btn btn-outline-secondary" type="button" id="toggleConfirmPassword">👁</button>
+                        </div>
+                        <span asp-validation-for="ConfirmPassword" class="text-danger small"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Create Account</button>
+
+                    <p class="text-center mt-3 mb-0">
+                        Đã có tài khoản rồi??
+                        <a asp-action="Login" asp-route-returnUrl="@ViewBag.ReturnUrl" class="fw-semibold text-decoration-none">Đăng nhập</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        (function () {
+            // Lấy đúng id do asp-for sinh ra
+            const passwordInput = document.getElementById('Password');
+            const confirmInput = document.getElementById('ConfirmPassword');
+
+            const bar = document.getElementById('passwordStrengthBar');        
+
+            const togglePasswordBtn = document.getElementById('togglePassword');
+            const toggleConfirmBtn = document.getElementById('toggleConfirmPassword');
+
+            if (!passwordInput || !bar) return;
+
+            function evaluatePassword(password) {
+                if (!password) return { label: "Not evaluated", color: "bg-secondary", width: 0 };
+
+                const len = password.length;
+                const hasLower = /[a-z]/.test(password);
+                const hasUpper = /[A-Z]/.test(password);
+                const hasDigit = /\d/.test(password);
+                const hasSpecial = /[^A-Za-z0-9]/.test(password);
+
+                const lower = password.toLowerCase();
+                const common = ["123456", "password", "qwerty", "111111", "abc123", "admin", "iloveyou"];
+                const containsCommon = common.some(x => lower.includes(x));
+
+                const groups = [hasLower, hasUpper, hasDigit, hasSpecial].filter(Boolean).length;
+
+                // Weak
+                if (len < 6 || groups <= 1 || containsCommon) {
+                    return { color: "bg-danger", width: 25 };
+                }
+
+                // Medium
+                if (len >= 6 && len <= 10 && groups >= 2) {
+                    return { color: "bg-warning", width: 50 };
+                }
+
+                // Very Strong
+                if (len >= 12 && groups >= 3 && !containsCommon) {
+                    return { color: "bg-success", width: 100 };
+                }
+
+                // Strong
+                if (len >= 10 && groups === 4 && !containsCommon) {
+                    return { color: "bg-info", width: 75 };
+                }
+
+                return { color: "bg-warning", width: 50 };
+            }
+
+            function renderStrength() {
+                const value = passwordInput.value || "";
+                const result = evaluatePassword(value);
+
+                bar.className = "progress-bar " + result.color;
+                bar.style.width = result.width + "%";
+            }
+
+            function toggleVisibility(input, btn) {
+                if (!input || !btn) return;
+
+                const willShow = input.type === "password";
+                input.type = willShow ? "text" : "password";
+                btn.setAttribute("title", willShow ? "Ẩn mật khẩu" : "Hiện mật khẩu");
+            }
+
+            passwordInput.addEventListener('input', renderStrength);
+
+            if (togglePasswordBtn) {
+                togglePasswordBtn.addEventListener('click', function () {
+                    toggleVisibility(passwordInput, togglePasswordBtn);
+                });
+            }
+
+            if (toggleConfirmBtn && confirmInput) {
+                toggleConfirmBtn.addEventListener('click', function () {
+                    toggleVisibility(confirmInput, toggleConfirmBtn);
+                });
+            }
+
+            // render lần đầu
+            renderStrength();
+        })();
+    </script>
+}
