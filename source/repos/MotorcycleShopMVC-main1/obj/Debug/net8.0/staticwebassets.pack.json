@@ -1,0 +1,1389 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MotorcycleShopMVC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MotorcycleShopMVC.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\avatars\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\avatars\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\10.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\100.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\100.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\101.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\101.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\102.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\102.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\103.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\103.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\104.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\104.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\105.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\105.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\106.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\106.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\107.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\107.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\108.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\108.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\109.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\109.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\11.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\110.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\110.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\111.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\111.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\112.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\112.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\113.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\113.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\114.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\114.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\115.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\115.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\116.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\116.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\117.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\117.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\118.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\118.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\119.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\119.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\12.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\120.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\120.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\121.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\121.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\122.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\122.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\123.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\123.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\124.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\124.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\125.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\125.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\126.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\126.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\127.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\127.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\128.jpeg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\128.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\129.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\129.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\13.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\130.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\130.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\131.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\131.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\132.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\132.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\133.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\133.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\134.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\134.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\135.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\135.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\136.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\136.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\137.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\137.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\138.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\138.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\139.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\139.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\14.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\140.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\140.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\141.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\141.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\142.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\142.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\143.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\143.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\144.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\144.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\145.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\145.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\146.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\146.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\147.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\147.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\148.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\148.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\149.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\149.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\15.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\150.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\150.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\151.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\151.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\152.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\152.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\153.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\153.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\154.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\154.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\155.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\155.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\156.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\156.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\157.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\157.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\158.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\158.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\159.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\159.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\16.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\160.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\160.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\161.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\161.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\162.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\162.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\163.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\163.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\164.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\164.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\165.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\165.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\166.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\166.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\167.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\167.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\168.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\168.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\169.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\169.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\17.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\170.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\170.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\171.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\171.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\172.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\172.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\173.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\173.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\174.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\174.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\175.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\175.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\176.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\176.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\177.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\177.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\178.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\178.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\179.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\179.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\18.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\180.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\180.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\181.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\181.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\182.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\182.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\183.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\183.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\184.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\184.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\185.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\185.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\186.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\186.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\187.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\187.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\188.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\188.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\189.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\189.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\19.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\190.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\190.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\191.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\191.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\192.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\192.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\193.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\193.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\194.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\194.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\195.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\195.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\196.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\196.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\197.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\197.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\198.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\198.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\199.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\199.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\20.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\200.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\200.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\21.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\21.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\22.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\22.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\23.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\23.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\24.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\24.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\25.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\25.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\26.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\26.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\27.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\27.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\28.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\28.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\29.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\29.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\30.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\30.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\31.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\31.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\32.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\32.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\33.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\33.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\34.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\34.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\35.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\35.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\36.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\36.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\37.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\37.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\38.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\38.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\39.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\39.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\40.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\40.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\41.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\41.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\42.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\42.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\43.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\43.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\44.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\44.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\45.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\45.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\46.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\46.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\47.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\47.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\48.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\48.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\49.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\49.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\50.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\50.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\51.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\51.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\52.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\52.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\53.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\53.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\54.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\54.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\55.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\55.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\56.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\56.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\57.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\57.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\58.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\58.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\59.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\59.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\60.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\60.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\61.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\61.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\62.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\62.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\63.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\63.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\64.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\64.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\65.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\65.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\66.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\66.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\67.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\67.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\68.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\68.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\69.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\69.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\70.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\70.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\71.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\71.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\72.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\72.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\73.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\73.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\74.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\74.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\75.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\75.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\76.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\76.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\77.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\77.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\78.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\78.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\79.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\79.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\80.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\80.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\81.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\81.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\82.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\82.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\83.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\83.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\84.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\84.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\85.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\85.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\86.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\86.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\87.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\87.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\88.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\88.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\89.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\89.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\9.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\90.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\90.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\91.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\91.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\92.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\92.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\93.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\93.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\94.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\94.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\95.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\95.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\96.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\96.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\97.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\97.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\98.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\98.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\motorcycles\\99.jpg",
+      "PackagePath": "staticwebassets\\images\\motorcycles\\99.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\201.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\201.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\202.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\202.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\203.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\203.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\204.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\204.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\205.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\205.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\206.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\206.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\207.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\207.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\208.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\208.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\209.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\209.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\210.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\210.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\211.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\211.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\212.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\212.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\213.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\213.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\214.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\214.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\215.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\215.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\216.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\216.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\217.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\217.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\218.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\218.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\219.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\219.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\220.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\220.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\221.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\221.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\222.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\222.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\223.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\223.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\224.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\224.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\225.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\225.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\226.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\226.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\227.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\227.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\228.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\228.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\229.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\229.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\230.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\230.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\231.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\231.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\232.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\232.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\233.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\233.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\234.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\234.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\235.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\235.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\236.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\236.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\237.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\237.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\238.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\238.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\239.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\239.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\240.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\240.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\241.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\241.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\242.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\242.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\243.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\243.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\244.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\244.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\245.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\245.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\246.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\246.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\247.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\247.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\248.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\248.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\249.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\249.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\250.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\250.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\251.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\251.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\252.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\252.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\253.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\253.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\254.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\254.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\255.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\255.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\256.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\256.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\257.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\257.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\258.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\258.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\259.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\259.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\260.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\260.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\261.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\261.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\262.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\262.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\263.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\263.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\264.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\264.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\265.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\265.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\266.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\266.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\267.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\267.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\268.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\268.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\269.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\269.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\270.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\270.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\271.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\271.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\272.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\272.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\273.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\273.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\274.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\274.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\275.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\275.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\276.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\276.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\277.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\277.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\278.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\278.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\279.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\279.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\images\\parts\\280.jpg",
+      "PackagePath": "staticwebassets\\images\\parts\\280.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\MotorcycleShopMVC-main1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MotorcycleShopMVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MotorcycleShopMVC.props",
+      "PackagePath": "build\\MotorcycleShopMVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MotorcycleShopMVC.props",
+      "PackagePath": "buildMultiTargeting\\MotorcycleShopMVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MotorcycleShopMVC.props",
+      "PackagePath": "buildTransitive\\MotorcycleShopMVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
